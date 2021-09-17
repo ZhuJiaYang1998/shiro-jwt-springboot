@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01/01.iml" filepath="$PROJECT_DIR$/01/01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Authorization/Authorization.iml" filepath="$PROJECT_DIR$/Authorization/Authorization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MD5AndSalt/MD5AndSalt.iml" filepath="$PROJECT_DIR$/MD5AndSalt/MD5AndSalt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot-Shiro/SpringBoot-Shiro.iml" filepath="$PROJECT_DIR$/SpringBoot-Shiro/SpringBoot-Shiro.iml" />
+    </modules>
+  </component>
+</project>
