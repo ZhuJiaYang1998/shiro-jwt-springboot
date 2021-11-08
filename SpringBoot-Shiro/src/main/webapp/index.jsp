@@ -11,20 +11,16 @@
 <body>
 <h1>系统登录</h1>
 <ul>
+    <shiro:hasAnyRoles name="user,admin">
     <li><a href="">用户管理</a>
         <ul>
-            <shiro:hasPermission name="user:add:*">
                 <li><a href="">增加</a></li>
-            </shiro:hasPermission>
-            <shiro:hasPermission name="user:delete:*">
                 <li><a href="">删除</a></li>
-            </shiro:hasPermission>
-            <shiro:hasPermission name="user:select:*">
                 <li><a href="">查询</a></li>
-            </shiro:hasPermission>
-            <li><a href="">修改</a></li>
+                <li><a href="">修改</a></li>
         </ul>
     </li>
+    </shiro:hasAnyRoles>
     <shiro:hasRole name="admin">
         <li><a href="">商品管理</a> </li>
         <li><a href="">订单管理</a> </li>

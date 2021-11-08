@@ -21,7 +21,7 @@ import javax.print.DocFlavor;
 public class OrderController {
     @RequestMapping("/save")
     @RequiresRoles(value = {"user","admin"})// 同时拥有两个role才可以访问
-    @RequiresPermissions(value = {"user:select:01"}) //拥有这个权限才可以访问
+//    @RequiresPermissions(value = {"user:select:01"}) //拥有这个权限才可以访问
     public String Save (){
         Subject subject = SecurityUtils.getSubject();
         if (subject.hasRole("admin")){

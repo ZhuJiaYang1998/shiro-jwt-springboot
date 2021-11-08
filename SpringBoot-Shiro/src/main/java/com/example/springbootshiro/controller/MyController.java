@@ -2,6 +2,7 @@ package com.example.springbootshiro.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @Description
@@ -12,6 +13,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MyController {
 @RequestMapping("/")
     public String index(){
+    System.out.println();
     return "index";
 }
+@RequestMapping("/test")
+@ResponseBody
+    public String test(){
+    System.out.println();
+    return "succees";
+    }
 }

@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/MD5AndSalt/pom.xml" />
         <option value="$PROJECT_DIR$/Authorization/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot-Shiro/pom.xml" />
+        <option value="$PROJECT_DIR$/JwtDemo/pom.xml" />
       </list>
     </option>
   </component>

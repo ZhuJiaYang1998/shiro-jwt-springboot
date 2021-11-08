@@ -4,8 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/01/01.iml" filepath="$PROJECT_DIR$/01/01.iml" />
       <module fileurl="file://$PROJECT_DIR$/Authorization/Authorization.iml" filepath="$PROJECT_DIR$/Authorization/Authorization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JwtDemo/JwtDemo.iml" filepath="$PROJECT_DIR$/JwtDemo/JwtDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/MD5AndSalt/MD5AndSalt.iml" filepath="$PROJECT_DIR$/MD5AndSalt/MD5AndSalt.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot-Shiro/SpringBoot-Shiro.iml" filepath="$PROJECT_DIR$/SpringBoot-Shiro/SpringBoot-Shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01/demo/demo.iml" filepath="$PROJECT_DIR$/01/demo/demo.iml" />
     </modules>
   </component>
 </project>

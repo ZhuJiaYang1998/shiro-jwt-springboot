@@ -2,4 +2,34 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.springbootshiro.mapper.ShiroUserMapper">
 
+    <resultMap id="resultMap1" type="com.example.springbootshiro.entity.ShiroUser">
+        <result property="password" column="pass"/>
+    <collection property="roles" javaType="list" ofType="com.example.springbootshiro.entity.ShiroRole">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+    </collection>
+    </resultMap>
+
+
+    <select id="findRoleByAccount" resultMap="resultMap1">
+        SELECT
+               u.password as pass,
+               r.id as id,
+               r.`name` as name
+        FROM `shiro_user` AS u
+                 LEFT JOIN shiro_user_role AS u_r ON u_r.user_id = u.id
+                 LEFT JOIN shiro_role AS r ON u_r.role_id = r.id
+        WHERE u.account = #{account}
+    </select>
+    <select id="findPermissionByRoleId" resultType="com.example.springbootshiro.entity.ShiroPermission">
+        SELECT *
+        FROM
+            shiro_role_premission AS r_p
+                LEFT JOIN shiro_premission AS p ON r_p.role_id = p.id
+        <where>
+            <foreach collection="list" index="id" open="r_p.role_id  IN (" separator="," close=")">
+                #{id}
+            </foreach>
+        </where>
+    </select>
 </mapper>
